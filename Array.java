@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class Array{
     public static void main (String[] arg){
       
-        /*/ 
+      
         ///Array walking 
         //Forward
         int [] a = {2,4,6,8,10};
@@ -26,7 +26,8 @@ public class Array{
             System.out.print(a[i] + " ");
 
         }
-
+       
+        System.out.println(" ");
         //Array Filling
         int[] b = new int[10];
 
@@ -35,6 +36,7 @@ public class Array{
             System.out.print(b[i] + " ");
 
         }
+        System.out.println(" ");
 
         //Java Function
         
@@ -42,22 +44,23 @@ public class Array{
         for (int value: b){
             System.out.print(value + " ");
         }
-
+        System.out.println(" ");
+        
         //Array Copy : Solution
         //Original
         int[] c = {1,2,3};
         int[] d ;
 
         d = new int[c.length];
-
+/*/
         for(int i= 0 ; i< c.length ; i++ ){
             d[i] = c[i];
 
         }
-
+/*/ 
         //Java Function
         d = Arrays.copyOf(c,c.length);
-
+ 
         System.out.println("Original arrays");
         for(int value:c){
             System.out.print(value + " ");
@@ -68,11 +71,12 @@ public class Array{
             System.out.print(value + " ");
 
         }
+        System.out.println(" ");
 
         //Array Comparing: Solution
         int[] e = {1,2,3,4};
-        int[] f = {1,2,3,4};
-
+        int[] f = {1,2,3,4,5};
+/*/ 
         boolean equal = true;
 
         if (e.length != f.length){
@@ -104,10 +108,10 @@ public class Array{
        else{
         System.out.println("Arrays are not equal");
        }
-
+/*/
        //Array Max-Min and Average
        int[] g = {1,2,3};
-
+/* /
        //Max
        int max = g[0];
        for (int i = 1 ;i < g.length ;i++){
@@ -118,9 +122,9 @@ public class Array{
        System.out.println("Max = "+ max);
 
        //Min
-       int min = g[0];
+       int min = g[0];//1
        for (int i = 1 ;i < g.length ;i++){
-        if(min < g[i]){
+        if(min > g[i]){
             min = g[i];
         }
        }
@@ -133,9 +137,9 @@ public class Array{
 
        }
        avg = avg / g.length;
-       System.out.println("Average = "+ min);
+       System.out.println("Average = "+ avg);
        
-
+/*/ 
        //Array 2D
        //implicit
        int[] [] score = new int[3] [2];
@@ -161,12 +165,12 @@ public class Array{
        //for each row
        for(int r = 0 ; r<scores.length ;r++){
            //for each column
-           for(int c = 0 ;c<scores[0].length ;c++){
-            System.out.print(scores[r] [c]+ " ");
+           for(int y = 0 ;y<scores[0].length ;y++){
+            System.out.print(scores[r] [y]+ " ");
             
            }
        }
-       /*/
+       
 
 
 
