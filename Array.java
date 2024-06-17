@@ -20,7 +20,7 @@ public class Array{
         }
 
         System.out.println(" ");
-
+ 
         //Backward
         for(int i = a.length-1; i>= 0 ;i--){
             System.out.print(a[i] + " ");
@@ -28,9 +28,10 @@ public class Array{
         }
        
         System.out.println(" ");
+        
         //Array Filling
         int[] b = new int[10];
-
+ 
         for(int i= 0 ; i<b.length ; i++){
             b[i] = 9 ;
             System.out.print(b[i] + " ");
@@ -52,15 +53,15 @@ public class Array{
         int[] d ;
 
         d = new int[c.length];
-/*/
+
         for(int i= 0 ; i< c.length ; i++ ){
             d[i] = c[i];
 
         }
-/*/ 
+ 
         //Java Function
         d = Arrays.copyOf(c,c.length);
- 
+  
         System.out.println("Original arrays");
         for(int value:c){
             System.out.print(value + " ");
@@ -76,7 +77,7 @@ public class Array{
         //Array Comparing: Solution
         int[] e = {1,2,3,4};
         int[] f = {1,2,3,4,5};
-/*/ 
+ 
         boolean equal = true;
 
         if (e.length != f.length){
@@ -108,10 +109,10 @@ public class Array{
        else{
         System.out.println("Arrays are not equal");
        }
-/*/
+ 
        //Array Max-Min and Average
        int[] g = {1,2,3};
-/* /
+
        //Max
        int max = g[0];
        for (int i = 1 ;i < g.length ;i++){
@@ -139,7 +140,7 @@ public class Array{
        avg = avg / g.length;
        System.out.println("Average = "+ avg);
        
-/*/ 
+
        //Array 2D
        //implicit
        int[] [] score = new int[3] [2];
@@ -159,7 +160,7 @@ public class Array{
         System.out.println(" ");
 
        }
-
+ 
        //Or use
 
        //for each row
