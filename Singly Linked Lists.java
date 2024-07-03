@@ -1,6 +1,6 @@
- class SLL{
 
-    private class Node {
+class SLL {
+    class Node {
     private int element;
     private Node next;
 
@@ -22,7 +22,9 @@
     public int getElement(){
         return element ;
     }
-    /*/ 
+ }
+ /*/ 
+    class SLLnext {
     public static void main(String[] args){
         Node one = new Node(1) ;
         Node two = new Node(2) ;
@@ -30,15 +32,20 @@
         //print all elements
         Node p;
          for(p = one ; p!= null;p = p.getNextNode()){
-            System.out.println(p.getElement() + " ");
+            System.out.print(p.getElement() + " ");
 
          }
-         System.out.println();
+         System.out.println() ;
     }
-         /*/ 
-  } 
-    //---------- End Node -------------
+  }
+   /*/ 
 
+         
+  
+  
+    //---------- End Node -------------
+    
+   
     //SLL properties and methods
     private Node head = null;
     private Node tail= null ;
@@ -104,10 +111,11 @@
         else{
             Node p;
             for(p = head;p.getNextNode()!= tail ; p = p.getNextNode()){
+                tail = p;
+            tail.link(null);
 
             }
-            tail = p;
-            tail.link(null);
+            
 
         }
     }
@@ -130,8 +138,8 @@
 
         }
     }   
-
- }
+}
+ 
 
 
     class MainSLL{
@@ -157,7 +165,9 @@
         
 
     }
-}
+        
+ }
+
 
  
 
