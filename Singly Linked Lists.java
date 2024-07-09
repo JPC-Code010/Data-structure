@@ -1,4 +1,4 @@
-
+/*/ 
 class SLL {
     class Node {
     private int element;
@@ -23,7 +23,7 @@ class SLL {
         return element ;
     }
  }
- /*/ 
+  
     class SLLnext {
     public static void main(String[] args){
         Node one = new Node(1) ;
@@ -38,7 +38,7 @@ class SLL {
          System.out.println() ;
     }
   }
-   /*/ 
+    
 
          
   
@@ -167,7 +167,7 @@ class SLL {
     }
         
  }
-
+/*/
 
  
 
