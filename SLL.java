@@ -23,7 +23,8 @@ class SLL {
         return element ;
     }
  }
-  
+
+   
     class SLLnext {
     public static void main(String[] args){
         Node one = new Node(1) ;
@@ -137,7 +138,26 @@ class SLL {
             
 
         }
-    }   
+    }  
+    
+    public void displayBackward() {
+        if (head == null) {
+            return;
+        }
+
+        // Traverse to the end of the list
+        Node current = head;
+        while (current.next != null) {
+            current = current.next;
+        }
+
+        // Traverse backward from the end to the head
+        while (current != null) {
+            System.out.print(current.getElement() + " <-> ");
+            current = current.prev;
+        }
+        System.out.println("null");
+    }
 }
  
 
@@ -162,13 +182,16 @@ class SLL {
         System.out.println("=== After clearing elements ===");
         sll.print();
 
+        System.out.println("=== Backward Singly ===");
+        sll.displayBackward();
+
         
 
     }
         
  }
-/*/
 
+/*/ 
  
 
 

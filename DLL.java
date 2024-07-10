@@ -45,7 +45,7 @@
          public DLL (){
             //build an empty list
             head = new Node(999);
-            tail = new Node (999);
+            tail = new Node (-999);
             head.linkNext(tail);
             tail.linkPrev(head);
       
@@ -118,6 +118,15 @@
             }
         }
 
+        public void displayForward() {
+         Node current = head;
+         while (current != null) {
+             System.out.print(current.getElementNode() + " <-> ");
+             current = current.next;
+         }
+         System.out.println();
+     }
+
 
         
         public void displayBackward() {
@@ -150,7 +159,11 @@
     DLL dll = new DLL();
             dll.addFirst(1);
             dll.addLast(2);
+            System.out.println("Backward DLL");
             dll.displayBackward();
+            System.out.println("Forward DLL");
+            dll.displayForward();
+            
 
    }
 }
